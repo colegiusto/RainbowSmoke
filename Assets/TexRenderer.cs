@@ -91,7 +91,7 @@ public class TexRenderer : MonoBehaviour
         }
 
         float startTime = Time.realtimeSinceStartup;
-        Vector2Int pt = boundaryPixels.ToArray().RandomElement();
+        Vector2Int pt = boundaryPixels.RandomElement();
         Vector3Int average = Vector3Int.zero;
         int j = 0;
         foreach (Vector2Int v in pt.BoundedNeighbors(resolution))
@@ -329,9 +329,9 @@ public static class Extensions
 
     }
 
-    public static T RandomElement<T>(this T[] arr)
+    public static T RandomElement<T>(this IList<T> arr)
     {
-        return arr[(int)(UnityEngine.Random.value*arr.Length)];
+        return arr[UnityEngine.Random.Range(0, arr.Count)];
     }
     public static T RandomElement<T>(this T[,] arr)
     {
