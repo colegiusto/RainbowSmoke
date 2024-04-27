@@ -5,8 +5,6 @@ using System.IO;
 using System.Linq;
 using Unity.Mathematics;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
@@ -180,6 +178,7 @@ public class CSpace
         
         Vector3Int index = GetIndex(c);
         Vector3Int ccolor = Vector3Int.zero;
+
 
 
         foreach (Vector3Int offset in offsets)
