@@ -131,7 +131,7 @@ public class TexRenderer : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        File.WriteAllBytes("Assets/Outputs/tex.png", tex.EncodeToPNG());
+        //File.WriteAllBytes("Assets/Outputs/tex.png", tex.EncodeToPNG());
     }
 
 }

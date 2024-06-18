@@ -137,8 +137,6 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420035}
-  - component: {fileID: 519420036}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -271,17 +269,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a83589ad94c201b43a3ad6b8c09e3ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolution: {x: 2048, y: 1152}
+  resolution: {x: 1280, y: 720}
   delay: 0
-  csize: 192
+  csize: 128
   cMins: {x: 0, y: 0, z: 0}
-  cMaxs: {x: 1, y: 1, z: 1}
-  bc: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 0}
+  cMaxs: {x: 1, y: 0.3, z: 1}
+  bc: {r: 1, g: 0.000000007947286, b: 0, a: 0}
   neighborTime: 0
   searchTime: 0
 --- !u!114 &519420034
@@ -291,47 +289,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8f4436ff9916b543a938ccc3451b7d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resolution: {x: 0, y: 0, z: 0}
---- !u!114 &519420035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 319a0183611bb694ea0d970cff898983, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toBeBlured: {fileID: 2800000, guid: 1081de25199d9f243b41580e7ea4e199, type: 3}
-  trg: {fileID: 519420036}
---- !u!114 &519420036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af8a428b43af1c04c86bfb8d7abbd475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: {x: 750, y: 500}
-  delay: 0
-  csize: 73
-  cMins: {x: 0, y: 0, z: 0.1}
-  cMaxs: {x: 0.8, y: 0.8, z: 1}
-  bc: {r: 1, g: 1, b: 1, a: 1}
-  neighborTime: 0
-  searchTime: 0
-  numStartingPoints: 20000
+  resolution: {x: 16, y: 16}
+  cSpace: {x: 64, y: 64, z: 64}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
